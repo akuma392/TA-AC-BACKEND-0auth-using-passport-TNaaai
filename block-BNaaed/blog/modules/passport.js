@@ -20,10 +20,7 @@ passport.use(
         // photo: profile._json.avatar_url,
       };
 
-      console.log(
-        newUser,
-        'testttttttttttttttttttttttttttttttttttttttttttttttttttt'
-      );
+      
       User.findOne({ email: profile._json.email }, (err, user) => {
         if (err) return done(err);
         console.log(user, 'hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh');
